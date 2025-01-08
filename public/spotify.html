@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify API Demo</title>
+    <link rel="stylesheet" href="../style/spotify.css">
+</head>
+<body>
+    <div class="centering">
+    </div>
+
+    <div class="centering">
+        <hr>
+        <h3>
+            Welcome! This webpage uses multiple API calls to display<br>
+            data for popular songs, as well as a search engine and search-by-year engine.
+        </h3>
+        <hr>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="overview.html">Overview</a></li>
+                <li><a href="honestypage.html">Honesty Policy</a></li>
+                <li><a href="https://www.spotify.com" target="_blank">Spotify.com</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Popular Songs Section -->
+    <div class="popular-songs-card">
+        <h2>Popular Songs in 2024</h2>
+        <p id="popular-songs-fallback" style="display:none;">Unable to load popular songs. Please try again later.</p>
+        <div class="popular-songs-list">
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-container">
+        <!-- Search by Keywords -->
+        <div class="search-card">
+            <h2>Search</h2>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search for songs...">
+                <div class="button-container">
+                    <button type="submit" id="search-btn">Search</button>
+                    <button type="button" id="clear-search-btn">Clear</button>
+                </div>
+            </form>
+            <p id="search-results-label" class="search-results-label">Here are the search results:</p>
+            <div class="search-results-card">
+                <ul id="search-results"></ul>
+            </div>
+        </div>
+
+        <!-- Search by Year -->
+        <div class="search-card">
+            <h2>Search by Year</h2>
+            <form id="year-search-form">
+                <input type="text" id="year-input" placeholder="Enter year...">
+                <div class="button-container">
+                    <button type="submit" id="year-search-btn">Search</button>
+                    <button type="button" id="clear-year-search-btn">Clear</button>
+                </div>
+            </form>
+            <p id="year-search-results-label" class="search-results-label">Here are the search results:</p>
+            <div class="year-search-results-card">
+                <ul id="year-search-results"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/spotify.js"></script>
+</body>
+</html>

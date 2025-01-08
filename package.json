@@ -1,0 +1,20 @@
+{
+  "name": "musichub-spotify-api",
+  "version": "1.0.0",
+  "description": "a music hub that allows the users to browse many different options",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baharpa/MusicHub-Spotify-API.git"
+  },
+  "author": "Bahar Parsaeian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baharpa/MusicHub-Spotify-API/issues"
+  },
+  "homepage": "https://github.com/Baharpa/MusicHub-Spotify-API#readme"
+}
